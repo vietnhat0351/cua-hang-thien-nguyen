@@ -58,7 +58,7 @@ const ProductsDashboard = () => {
 
       // Sau khi có imageUrl, tiếp tục với việc gửi POST request
       const response = await axios.post(
-        "http://3.24.232.151:80/api/v1/products/add",
+        "https://cua-hang-thien-nguyen.onrender.com/api/v1/products/add",
         {
           ...product,
           productImage: imageUrl,

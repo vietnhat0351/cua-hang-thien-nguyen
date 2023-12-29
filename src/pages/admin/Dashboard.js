@@ -2,7 +2,7 @@ import useAxios from "../../hooks/useAxios";
 
 const Dashboard = () => {
   const { data, error, loading } = useAxios(
-    "http://3.24.232.151:80/api/v1/products",
+    "https://cua-hang-thien-nguyen.onrender.com/api/v1/products",
     "get",
     { data: { name: "Product 1", description: "Product 1 description" } }
   );

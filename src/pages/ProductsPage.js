@@ -8,10 +8,12 @@ const ProductsPage = () => {
   const [products, setProducts] = useState(null);
 
   useEffect(() => {
-    axios.get("http://3.24.232.151:80/api/v1/products").then((response) => {
-      setProducts(response.data);
-      console.log(response.data);
-    });
+    axios
+      .get("https://cua-hang-thien-nguyen.onrender.com/api/v1/products")
+      .then((response) => {
+        setProducts(response.data);
+        console.log(response.data);
+      });
   }, []);
 
   return (
